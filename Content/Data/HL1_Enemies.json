@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Headcrab",
+    "type": "beast",
+    "hp": 20,
+    "damage": 5
+  },
+  {
+    "name": "Zombie",
+    "type": "beast",
+    "hp": 50,
+    "damage": 20
+  },
+  {
+    "name": "Bullsquid",
+    "type": "beast",
+    "hp": 120,
+    "damage": 15
+  },
+  {
+    "name": "HECU Grunt",
+    "type": "soldier",
+    "hp": 40,
+    "damage": 8
+  },
+  {
+    "name": "Vortigaunt",
+    "type": "alien",
+    "hp": 60,
+    "damage": 10
+  },
+  {
+    "name": "Boss: Nihilanth",
+    "type": "boss",
+    "hp": 2000,
+    "damage": 25
+  }
+]

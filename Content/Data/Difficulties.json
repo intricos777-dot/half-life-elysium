@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "default": "casual",
+  "profiles": {
+    "casual": {
+      "description": "Relaxed mayhem: forgiving damage, extra ammo, fast respawns",
+      "player": {"health": 150, "damageTakenMultiplier": 0.8, "respawnTimeSeconds": 5},
+      "combat": {"enemyHealthMultiplier": 1.0, "enemyDamageMultiplier": 0.75, "enemyAccuracy": 0.6, "enemyCountMultiplier": 1.0},
+      "economy": {"ammoMultiplier": 1.5, "creditsMultiplier": 1.25},
+      "hud": {"showEnemyHealth": true, "minimap": true, "objectiveMarkers": true}
+    },
+    "legend": {
+      "description": "Brutal endgame: lethal enemies, scarce supplies, no mercy",
+      "player": {"health": 100, "damageTakenMultiplier": 1.5, "respawnTimeSeconds": 15},
+      "combat": {"enemyHealthMultiplier": 1.8, "enemyDamageMultiplier": 1.35, "enemyAccuracy": 0.95, "enemyCountMultiplier": 1.5},
+      "economy": {"ammoMultiplier": 0.8, "creditsMultiplier": 0.9},
+      "hud": {"showEnemyHealth": false, "minimap": false, "objectiveMarkers": false}
+    }
+  }
+}

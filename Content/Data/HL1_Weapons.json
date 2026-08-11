@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Crowbar",
+    "type": "melee",
+    "damage": 20
+  },
+  {
+    "name": "9mm Pistol (Glock 17)",
+    "type": "pistol",
+    "damage": 8
+  },
+  {
+    "name": "MP5",
+    "type": "smg",
+    "damage": 8,
+    "fireRate": 10.0
+  },
+  {
+    "name": "Shotgun",
+    "type": "shotgun",
+    "damage": 90,
+    "pellets": 6
+  },
+  {
+    "name": "Crossbow",
+    "type": "sniper",
+    "damage": 200
+  },
+  {
+    "name": "RPG",
+    "type": "explosive",
+    "damage": 200,
+    "splash": true
+  },
+  {
+    "name": "Tau Cannon",
+    "type": "energy",
+    "damage": 30
+  },
+  {
+    "name": "Hivehand",
+    "type": "energy",
+    "damage": 40
+  }
+]
