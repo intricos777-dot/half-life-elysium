@@ -1,38 +1,15 @@
 [
-  {
-    "name": "Headcrab",
-    "type": "beast",
-    "hp": 20,
-    "damage": 5
-  },
-  {
-    "name": "Zombie",
-    "type": "beast",
-    "hp": 50,
-    "damage": 20
-  },
-  {
-    "name": "Bullsquid",
-    "type": "beast",
-    "hp": 120,
-    "damage": 15
-  },
-  {
-    "name": "HECU Grunt",
-    "type": "soldier",
-    "hp": 40,
-    "damage": 8
-  },
-  {
-    "name": "Vortigaunt",
-    "type": "alien",
-    "hp": 60,
-    "damage": 10
-  },
-  {
-    "name": "Boss: Nihilanth",
-    "type": "boss",
-    "hp": 2000,
-    "damage": 25
-  }
+  {"name":"Headcrab","type":"beast","hp":20,"damage":5,"note":"the parasite that makes the zombie"},
+  {"name":"Zombie","type":"beast","hp":50,"damage":20,"note":"headcrab host — a man who never left Black Mesa"},
+  {"name":"Barnacle","type":"beast","hp":50,"damage":15,"note":"tongue from the ceiling; eats what it catches"},
+  {"name":"Snark","type":"beast","hp":5,"damage":15,"note":"a nest of them is a bad day"},
+  {"name":"Bullsquid","type":"beast","hp":120,"damage":15},
+  {"name":"Houndeye","type":"beast","hp":40,"damage":10,"note":"sonic bark, packs of three"},
+  {"name":"Gargantua","type":"alien","hp":700,"damage":40,"note":"burns everything; nuclear strike only"},
+  {"name":"Alien Grunt","type":"alien","hp":200,"damage":30,"note":"Xen's shock-trooper"},
+  {"name":"Gonarch","type":"boss","hp":1500,"damage":30,"note":"mother of the headcrab swarm — midwife of the Resonance Cascade"},
+  {"name":"HECU Grunt","type":"soldier","hp":40,"damage":8},
+  {"name":"Black Ops","type":"soldier","hp":35,"damage":10,"note":"FEMALE assassination squad — the ones who fire on scientists"},
+  {"name":"Vortigaunt","type":"alien","hp":60,"damage":10,"note":"enslaved by the Nihilanth; freed in half-life 2"},
+  {"name":"Boss: Nihilanth","type":"boss","hp":2000,"damage":25,"note":"Xen's last warden — the one the G-Man was watching for"}
 ]
