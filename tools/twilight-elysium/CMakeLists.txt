@@ -22,19 +22,21 @@ add_library(te-renderer STATIC
 target_link_libraries(te-renderer PRIVATE te-engine)
 
 add_library(te-shader STATIC
-    src/shader/shader_stub.cpp
+    src/shader/shader_pipeline.cpp
 )
+target_include_directories(te-shader PUBLIC assets/shaders)
 target_link_libraries(te-shader PRIVATE te-engine)
 
 add_library(te-asset STATIC
-    src/asset/asset_stub.cpp
+    src/asset/asset_manager.cpp
 )
 target_link_libraries(te-asset PRIVATE te-engine)
 
 add_library(te-pipeline STATIC
-    src/pipeline/frame_graph_stub.cpp
+    src/pipeline/render_graph.cpp
 )
-target_link_libraries(te-pipeline PRIVATE te-engine)
+target_include_directories(te-pipeline PUBLIC src/pipeline)
+target_link_libraries(te-pipeline PRIVATE te-engine te-shader)
 
 add_library(te-lod STATIC
     src/game/legend_of_dragoon/character/character.cpp
@@ -56,3 +58,9 @@ add_executable(te-test src/engine/main.cpp)
 target_link_libraries(te-test PRIVATE te-engine te-lod)
 # Headless bounded smoke: the engine loop must close and tick 60 frames
 add_test(NAME te-core COMMAND te-test --bounded)
+
+# Headless module proof: GLB import, render graph cull, shader compile
+add_executable(te-asset-smoke tests/asset_smoke_test.cpp)
+target_compile_definitions(te-asset-smoke PRIVATE TE_SHADER_DIR="${CMAKE_CURRENT_SOURCE_DIR}/assets/shaders")
+target_link_libraries(te-asset-smoke PRIVATE te-engine te-asset te-pipeline te-shader)
+add_test(NAME te-asset-smoke COMMAND te-asset-smoke)
